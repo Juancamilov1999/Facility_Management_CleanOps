@@ -9,8 +9,10 @@ interface DemoFormData {
   name: string
   email: string
   company: string
-  userType: 'contractor' | 'owner'
   phone?: string
+  numBuildings?: string
+  numContractors?: string
+  painPoint?: string
   message?: string
 }
 
@@ -83,12 +85,12 @@ export default function DemoForm() {
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Descubre cómo CleanOps puede transformar tu operación
+              ¿Listo para tomar control de tus contratistas?
             </h2>
 
             <p className="text-lg text-dark-light mb-8">
-              Agenda una demo personalizada y descubre cómo podemos ayudarte a
-              centralizar y optimizar tu gestión de Facility Management.
+              Agenda una demo personalizada y descubre cómo otros Building Owners
+              están eliminando el caos con CleanOps.
             </p>
 
             <div className="space-y-4">
@@ -331,49 +333,75 @@ export default function DemoForm() {
                   />
                 </div>
 
-                {/* User Type */}
+                {/* Number of Buildings */}
                 <div>
-                  <label className="block text-sm font-semibold text-dark mb-2">
-                    Tipo de usuario *
+                  <label
+                    htmlFor="numBuildings"
+                    className="block text-sm font-semibold text-dark mb-2"
+                  >
+                    ¿Cuántos edificios o sedes gestionas? (opcional)
                   </label>
-                  <div className="grid grid-cols-2 gap-4">
-                    <label className="relative cursor-pointer">
-                      <input
-                        type="radio"
-                        value="contractor"
-                        {...register('userType', {
-                          required: 'Selecciona un tipo de usuario',
-                        })}
-                        className="peer sr-only"
-                      />
-                      <div className="border-2 border-dark-light peer-checked:border-primary peer-checked:bg-primary/10 rounded-lg p-4 text-center transition-all">
-                        <div className="font-semibold text-dark">
-                          Contratista
-                        </div>
-                      </div>
-                    </label>
+                  <select
+                    id="numBuildings"
+                    {...register('numBuildings')}
+                    className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="1-2">1-2 edificios</option>
+                    <option value="3-5">3-5 edificios</option>
+                    <option value="6-10">6-10 edificios</option>
+                    <option value="11+">Más de 10 edificios</option>
+                  </select>
+                </div>
 
-                    <label className="relative cursor-pointer">
-                      <input
-                        type="radio"
-                        value="owner"
-                        {...register('userType', {
-                          required: 'Selecciona un tipo de usuario',
-                        })}
-                        className="peer sr-only"
-                      />
-                      <div className="border-2 border-dark-light peer-checked:border-primary peer-checked:bg-primary/10 rounded-lg p-4 text-center transition-all">
-                        <div className="font-semibold text-dark">
-                          Building Owner
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                  {errors.userType && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.userType.message}
-                    </p>
-                  )}
+                {/* Number of Contractors */}
+                <div>
+                  <label
+                    htmlFor="numContractors"
+                    className="block text-sm font-semibold text-dark mb-2"
+                  >
+                    ¿Cuántos contratistas supervisas? (opcional)
+                  </label>
+                  <select
+                    id="numContractors"
+                    {...register('numContractors')}
+                    className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="1-3">1-3 contratistas</option>
+                    <option value="4-6">4-6 contratistas</option>
+                    <option value="7-10">7-10 contratistas</option>
+                    <option value="11+">Más de 10 contratistas</option>
+                  </select>
+                </div>
+
+                {/* Main Pain Point */}
+                <div>
+                  <label
+                    htmlFor="painPoint"
+                    className="block text-sm font-semibold text-dark mb-2"
+                  >
+                    ¿Cuál es tu principal desafío hoy? (opcional)
+                  </label>
+                  <select
+                    id="painPoint"
+                    {...register('painPoint')}
+                    className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="supervision">
+                      Supervisar múltiples contratistas
+                    </option>
+                    <option value="traceability">Falta de trazabilidad</option>
+                    <option value="reporting">
+                      Generación manual de reportes
+                    </option>
+                    <option value="communication">
+                      Comunicación fragmentada
+                    </option>
+                    <option value="compliance">Cumplimiento y evidencia</option>
+                    <option value="other">Otro</option>
+                  </select>
                 </div>
 
                 {/* Message (optional) */}

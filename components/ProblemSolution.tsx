@@ -47,17 +47,17 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            ¿Cansado de operar con{' '}
-            <span className="text-red-600">múltiples herramientas</span>, sin
-            trazabilidad y sin visibilidad real de tu operación?
+            ¿Perdiendo el control sobre{' '}
+            <span className="text-red-600">múltiples contratistas</span> sin
+            trazabilidad ni visibilidad de lo que realmente pasa en tu infraestructura?
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-dark-medium"
           >
-            La gestión tradicional de Facility Management es fragmentada,
-            ineficiente y costosa.
+            Supervisar múltiples contratistas sin una plataforma unificada es
+            un caos diario que pone en riesgo tu operación y reputación.
           </motion.p>
         </motion.div>
 
@@ -83,16 +83,16 @@ export default function ProblemSolution() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                 />
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Información Fragmentada
+              Caos con Múltiples Contratistas
             </h3>
             <p className="text-dark-medium text-sm">
-              Datos dispersos en múltiples plataformas, correos y hojas de
-              cálculo.
+              Gestionar equipos mixtos (internos y externos) en WhatsApp, correos
+              y Excel es insostenible. 66% de propietarios luchan con esto.
             </p>
           </motion.div>
 
@@ -116,10 +116,11 @@ export default function ProblemSolution() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Falta de Trazabilidad
+              Cero Trazabilidad
             </h3>
             <p className="text-dark-medium text-sm">
-              Imposible rastrear quién hizo qué, cuándo y dónde en tiempo real.
+              Imposible rastrear quién hizo qué, cuándo y dónde. Sin evidencia
+              de cumplimiento ni documentación confiable.
             </p>
           </motion.div>
 
@@ -138,16 +139,16 @@ export default function ProblemSolution() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
                 />
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Pérdida de Tiempo
+              Riesgo Operacional y Reputacional
             </h3>
             <p className="text-dark-medium text-sm">
-              Horas perdidas consolidando información y generando reportes
-              manualmente.
+              Sin supervisión en tiempo real, los problemas estallan sin aviso.
+              Tu reputación corporativa está en juego cada día.
             </p>
           </motion.div>
         </motion.div>
@@ -169,17 +170,18 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            Una <span className="text-primary">plataforma unificada</span> que
-            centraliza toda tu operación
+            Una <span className="text-primary">plataforma unificada</span> que te
+            da control total sobre todos tus contratistas
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-dark-medium mb-8"
           >
-            CleanOps integra todas las herramientas y procesos de Facility
-            Management en una sola plataforma intuitiva, brindando visibilidad
-            total y control en tiempo real.
+            CleanOps centraliza la supervisión de todos tus contratistas de
+            Facility Management en una sola plataforma, dándote trazabilidad
+            completa, visibilidad en tiempo real y evidencia de todo lo que pasa
+            en tu infraestructura.
           </motion.p>
 
           {/* Before/After Comparison */}
@@ -192,11 +194,11 @@ export default function ProblemSolution() {
               <h3 className="text-xl font-bold text-dark mb-4">Sin CleanOps</h3>
               <ul className="space-y-3 text-left">
                 {[
-                  'Múltiples plataformas y herramientas',
-                  'Reportes manuales y desactualizados',
-                  'Comunicación por email y WhatsApp',
-                  'Sin visibilidad en tiempo real',
-                  'Difícil tomar decisiones informadas',
+                  'Supervisión fragmentada de contratistas',
+                  'Información en WhatsApp, correos y Excel',
+                  'Cero trazabilidad de actividades',
+                  'Sin evidencia de cumplimiento',
+                  'Problemas descubiertos tarde',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -223,11 +225,11 @@ export default function ProblemSolution() {
               <h3 className="text-xl font-bold text-dark mb-4">Con CleanOps</h3>
               <ul className="space-y-3 text-left">
                 {[
-                  'Una sola plataforma integrada',
-                  'Reportes automáticos en tiempo real',
-                  'Comunicación centralizada',
-                  'Trazabilidad completa 24/7',
-                  'Decisiones basadas en datos',
+                  'Control centralizado de todos los contratistas',
+                  'Toda la información en una sola plataforma',
+                  'Trazabilidad completa de cada actividad',
+                  'Evidencia automática de cumplimiento',
+                  'Supervisión y alertas en tiempo real',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg

@@ -44,9 +44,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight"
             >
-              Tu operación de{' '}
-              <span className="text-primary">Facility Management</span> en un
-              solo lugar, a un solo click
+              Controla todos tus{' '}
+              <span className="text-primary">contratistas</span> desde una sola
+              plataforma
             </motion.h1>
 
             <motion.p
@@ -55,9 +55,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg sm:text-xl text-dark-medium mb-8 max-w-2xl mx-auto lg:mx-0"
             >
-              La plataforma integral que conecta empresas contratistas y
-              propietarios de edificios. Trazabilidad completa, gestión en
-              tiempo real.
+              La plataforma que los Building Owners necesitan para supervisar
+              múltiples contratistas, tener trazabilidad completa y visibilidad
+              en tiempo real de toda su infraestructura corporativa.
             </motion.p>
 
             <motion.div
