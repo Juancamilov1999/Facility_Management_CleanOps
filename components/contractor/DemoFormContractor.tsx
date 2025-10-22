@@ -10,13 +10,13 @@ interface DemoFormData {
   email: string
   company: string
   phone?: string
-  numBuildings?: string
-  numContractors?: string
+  numEmployees?: string
+  numClients?: string
   painPoint?: string
   message?: string
 }
 
-export default function DemoForm() {
+export default function DemoFormContractor() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -32,16 +32,13 @@ export default function DemoForm() {
   const onSubmit = async (data: DemoFormData) => {
     setIsSubmitting(true)
 
-    // Simulate API call
-    // In production, replace with actual API endpoint
-    console.log('Form Data:', data)
-
     // Store in localStorage for demo purposes
     const submissions = JSON.parse(
       localStorage.getItem('cleanops_demos') || '[]'
     )
     submissions.push({
       ...data,
+      userType: 'contractor',
       timestamp: new Date().toISOString(),
     })
     localStorage.setItem('cleanops_demos', JSON.stringify(submissions))
@@ -85,12 +82,12 @@ export default function DemoForm() {
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              ¿Listo para tomar control de tu Facility Management?
+              ¿Listo para llevar tu operación al siguiente nivel?
             </h2>
 
             <p className="text-lg text-dark-light mb-8">
-              Agenda una demo personalizada y descubre cómo otros Building Owners
-              están eliminando el caos con CleanOps.
+              Agenda una demo personalizada y descubre cómo otros contratistas
+              están ganando más contratos con CleanOps.
             </p>
 
             <div className="space-y-4">
@@ -147,7 +144,7 @@ export default function DemoForm() {
                       />
                     </svg>
                   ),
-                  text: 'Asesoría personalizada para tu caso',
+                  text: 'Asesoría personalizada para tu operación',
                 },
                 {
                   icon: (
@@ -266,7 +263,7 @@ export default function DemoForm() {
                     htmlFor="email"
                     className="block text-sm font-semibold text-dark mb-2"
                   >
-                    Email corporativo *
+                    Email *
                   </label>
                   <input
                     type="email"
@@ -333,45 +330,45 @@ export default function DemoForm() {
                   />
                 </div>
 
-                {/* Number of Buildings */}
+                {/* Number of Employees */}
                 <div>
                   <label
-                    htmlFor="numBuildings"
+                    htmlFor="numEmployees"
                     className="block text-sm font-semibold text-dark mb-2"
                   >
-                    ¿Cuántos edificios o sedes gestionas? (opcional)
+                    ¿Cuántos empleados tienes? (opcional)
                   </label>
                   <select
-                    id="numBuildings"
-                    {...register('numBuildings')}
+                    id="numEmployees"
+                    {...register('numEmployees')}
                     className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                   >
                     <option value="">Selecciona una opción</option>
-                    <option value="1-2">1-2 edificios</option>
-                    <option value="3-5">3-5 edificios</option>
-                    <option value="6-10">6-10 edificios</option>
-                    <option value="11+">Más de 10 edificios</option>
+                    <option value="1-5">1-5 empleados</option>
+                    <option value="6-15">6-15 empleados</option>
+                    <option value="16-30">16-30 empleados</option>
+                    <option value="31+">Más de 30 empleados</option>
                   </select>
                 </div>
 
-                {/* Number of Contractors */}
+                {/* Number of Clients */}
                 <div>
                   <label
-                    htmlFor="numContractors"
+                    htmlFor="numClients"
                     className="block text-sm font-semibold text-dark mb-2"
                   >
-                    ¿Cuántos contratistas supervisas? (opcional)
+                    ¿Cuántos clientes gestionas? (opcional)
                   </label>
                   <select
-                    id="numContractors"
-                    {...register('numContractors')}
+                    id="numClients"
+                    {...register('numClients')}
                     className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                   >
                     <option value="">Selecciona una opción</option>
-                    <option value="1-3">1-3 contratistas</option>
-                    <option value="4-6">4-6 contratistas</option>
-                    <option value="7-10">7-10 contratistas</option>
-                    <option value="11+">Más de 10 contratistas</option>
+                    <option value="1-3">1-3 clientes</option>
+                    <option value="4-8">4-8 clientes</option>
+                    <option value="9-15">9-15 clientes</option>
+                    <option value="16+">Más de 15 clientes</option>
                   </select>
                 </div>
 
@@ -389,17 +386,15 @@ export default function DemoForm() {
                     className="w-full px-4 py-3 border border-dark-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                   >
                     <option value="">Selecciona una opción</option>
-                    <option value="supervision">
-                      Supervisar múltiples contratistas
-                    </option>
-                    <option value="traceability">Falta de trazabilidad</option>
+                    <option value="personnel">Control de personal</option>
                     <option value="reporting">
-                      Generación manual de reportes
+                      Generación de reportes
                     </option>
                     <option value="communication">
-                      Comunicación fragmentada
+                      Comunicación con clientes
                     </option>
-                    <option value="compliance">Cumplimiento y evidencia</option>
+                    <option value="tracking">Trazabilidad de tareas</option>
+                    <option value="scaling">Escalar el negocio</option>
                     <option value="other">Otro</option>
                   </select>
                 </div>

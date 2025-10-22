@@ -3,6 +3,7 @@ import ProblemSolution from '@/components/ProblemSolution'
 import Features from '@/components/Features'
 import Benefits from '@/components/Benefits'
 import DemoForm from '@/components/DemoForm'
+import ContractorCTA from '@/components/ContractorCTA'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Features />
       <Benefits />
       <DemoForm />
+      <ContractorCTA />
       <Footer />
     </main>
   )

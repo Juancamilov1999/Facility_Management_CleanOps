@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Hero() {
+export default function HeroContractor() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-white to-dark-light">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-white to-dark-light pt-16">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
@@ -21,21 +22,23 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-center lg:text-left"
           >
-            {/* Logo - Reemplazar con logo real de CleanOps */}
+            {/* Logo */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-8 flex justify-center lg:justify-start"
             >
-              <Image
-                src="/Logos/Logo CleanOps Full Color.png"
-                alt="CleanOps Logo"
-                width={200}
-                height={60}
-                priority
-                className="h-12 w-auto"
-              />
+              <Link href="/">
+                <Image
+                  src="/Logos/Logo CleanOps Full Color.png"
+                  alt="CleanOps Logo"
+                  width={200}
+                  height={60}
+                  priority
+                  className="h-12 w-auto"
+                />
+              </Link>
             </motion.div>
 
             <motion.h1
@@ -44,8 +47,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight"
             >
-              Toma el control de tu{' '}
-              <span className="text-primary">Facility Management</span>
+              Gestiona tu operación{' '}
+              <span className="text-primary">en tiempo real</span>
             </motion.h1>
 
             <motion.p
@@ -54,9 +57,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg sm:text-xl text-dark-medium mb-8 max-w-2xl mx-auto lg:mx-0"
             >
-              La plataforma que los Building Owners necesitan para supervisar
-              múltiples contratistas, tener trazabilidad completa y visibilidad
-              en tiempo real de toda su infraestructura corporativa.
+              La plataforma que los contratistas de Facility Management usan para
+              controlar su equipo, gestionar operaciones y generar reportes
+              automáticos que impresionan a sus clientes.
             </motion.p>
 
             <motion.div
@@ -85,23 +88,22 @@ export default function Hero() {
                 </svg>
               </a>
 
-              <a
-                href="#features"
+              <Link
+                href="/"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary bg-white hover:bg-dark-light border-2 border-primary rounded-lg transition-all duration-300"
               >
-                Conocer más
-              </a>
+                ¿Eres Building Owner?
+              </Link>
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Visual/Dashboard Preview */}
+          {/* Right Column - Visual */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative hidden lg:block pb-8"
           >
-            {/* Placeholder for dashboard image - Replace with actual screenshot */}
             <div className="relative rounded-2xl shadow-2xl bg-white p-8">
               <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary-light/20 rounded-xl flex items-center justify-center">
                 <div className="text-center">
@@ -139,7 +141,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   <span className="text-xs text-dark-medium">
-                    Trazabilidad en tiempo real
+                    Control de personal
                   </span>
                 </div>
               </motion.div>
@@ -157,7 +159,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
                   <span className="text-xs text-dark-medium">
-                    Gestión centralizada
+                    Reportes automáticos
                   </span>
                 </div>
               </motion.div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-export default function ProblemSolution() {
+export default function ProblemSolutionContractor() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
@@ -47,17 +47,17 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            ¿Pierdes el control sobre tus{' '}
-            <span className="text-red-600">contratistas</span> sin trazabilidad
-            ni visibilidad de lo que pasa en tu infraestructura?
+            ¿Gestionando tu operación con{' '}
+            <span className="text-red-600">herramientas dispersas</span> y
+            perdiendo tiempo en reportes manuales?
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-dark-medium"
           >
-            Supervisar múltiples contratistas sin una plataforma unificada es
-            un caos diario que pone en riesgo tu operación y reputación.
+            La gestión tradicional de operaciones es caótica, ineficiente y te
+            hace perder contratos por falta de profesionalismo.
           </motion.p>
         </motion.div>
 
@@ -83,16 +83,16 @@ export default function ProblemSolution() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Caos con Múltiples Contratistas
+              Control Manual de Personal
             </h3>
             <p className="text-dark-medium text-sm">
-              Gestionar equipos mixtos (internos y externos) en WhatsApp, correos
-              y Excel es insostenible. La mayoría de propietarios luchan con esto.
+              Asistencia en papel, horarios en Excel, imposible saber quién está
+              donde en tiempo real.
             </p>
           </motion.div>
 
@@ -111,16 +111,16 @@ export default function ProblemSolution() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Cero Trazabilidad
+              Reportes que Toman Días
             </h3>
             <p className="text-dark-medium text-sm">
-              Imposible rastrear quién hizo qué, cuándo y dónde. Sin evidencia
-              de cumplimiento ni documentación confiable.
+              Horas consolidando fotos, Excel, y documentos para entregar
+              reportes básicos a clientes.
             </p>
           </motion.div>
 
@@ -144,11 +144,11 @@ export default function ProblemSolution() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-dark mb-2">
-              Riesgo Operacional y Reputacional
+              Imagen Poco Profesional
             </h3>
             <p className="text-dark-medium text-sm">
-              Sin supervisión en tiempo real, los problemas estallan sin aviso.
-              Tu reputación corporativa está en juego cada día.
+              Clientes esperan tecnología y transparencia. Reportes manuales te
+              hacen ver desactualizado.
             </p>
           </motion.div>
         </motion.div>
@@ -170,18 +170,17 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            Una <span className="text-primary">plataforma unificada</span> que te
-            da control total sobre todos tus contratistas
+            Una <span className="text-primary">plataforma completa</span> que
+            profesionaliza tu operación
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-dark-medium mb-8"
           >
-            CleanOps centraliza la supervisión de todos tus contratistas de
-            Facility Management en una sola plataforma, dándote trazabilidad
-            completa, visibilidad en tiempo real y evidencia de todo lo que pasa
-            en tu infraestructura.
+            CleanOps centraliza todo: control de personal, gestión de
+            operaciones, reportes automáticos y comunicación con clientes. Todo
+            en una sola app.
           </motion.p>
 
           {/* Before/After Comparison */}
@@ -194,11 +193,11 @@ export default function ProblemSolution() {
               <h3 className="text-xl font-bold text-dark mb-4">Sin CleanOps</h3>
               <ul className="space-y-3 text-left">
                 {[
-                  'Supervisión fragmentada de contratistas',
-                  'Información en WhatsApp, correos y Excel',
-                  'Cero trazabilidad de actividades',
-                  'Sin evidencia de cumplimiento',
-                  'Problemas descubiertos tarde',
+                  'Asistencia en papel o WhatsApp',
+                  'Reportes manuales que toman días',
+                  'Sin visibilidad de operaciones',
+                  'Clientes pidiendo información constantemente',
+                  'Imagen poco profesional',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -225,11 +224,11 @@ export default function ProblemSolution() {
               <h3 className="text-xl font-bold text-dark mb-4">Con CleanOps</h3>
               <ul className="space-y-3 text-left">
                 {[
-                  'Control centralizado de todos los contratistas',
-                  'Toda la información en una sola plataforma',
-                  'Trazabilidad completa de cada actividad',
-                  'Evidencia automática de cumplimiento',
-                  'Supervisión y alertas en tiempo real',
+                  'Control digital de asistencia en tiempo real',
+                  'Reportes automáticos en segundos',
+                  'Dashboard con toda la operación visible',
+                  'Clientes acceden a información 24/7',
+                  'Imagen profesional y moderna',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg

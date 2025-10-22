@@ -1,21 +1,22 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Navbar from '@/components/Navbar'
 
 export const metadata: Metadata = {
-  title: 'CleanOps - Tu operación de Facility Management en un solo lugar',
-  description: 'La plataforma integral que conecta empresas contratistas y propietarios de edificios. Trazabilidad completa, gestión en tiempo real.',
+  title: 'CleanOps - Plataforma de Facility Management',
+  description: 'La plataforma integral para Building Owners y Contratistas. Trazabilidad completa, gestión en tiempo real.',
   keywords: 'facility management, gestión de edificios, contratistas, building owners, trazabilidad, operaciones',
   authors: [{ name: 'CleanOps' }],
   openGraph: {
-    title: 'CleanOps - Tu operación de Facility Management en un solo lugar',
-    description: 'La plataforma integral que conecta empresas contratistas y propietarios de edificios.',
+    title: 'CleanOps - Plataforma de Facility Management',
+    description: 'La plataforma integral para Building Owners y Contratistas.',
     type: 'website',
     locale: 'es_ES',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CleanOps - Tu operación de Facility Management en un solo lugar',
-    description: 'La plataforma integral que conecta empresas contratistas y propietarios de edificios.',
+    title: 'CleanOps - Plataforma de Facility Management',
+    description: 'La plataforma integral para Building Owners y Contratistas.',
   },
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#0A7BC1',
@@ -28,7 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
