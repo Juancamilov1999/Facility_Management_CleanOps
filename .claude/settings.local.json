@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(git init)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(npm run dev:*)",
+      "Bash(dir \"C:\\Users\\juanc\\OneDrive\\Documents\\Juan\\TRABAJO\\CleanOps\\Claude Projects\\Facility_Management_Web\\public\\images\")",
+      "Bash(dir \"C:\\Users\\juanc\\OneDrive\\Documents\\Juan\\TRABAJO\\CleanOps\\Claude Projects\\Facility_Management_Web\\public\\Logos\")",
+      "Bash(dir:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": []

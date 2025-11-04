@@ -92,7 +92,7 @@ export default function Benefits() {
           />
         </svg>
       ),
-      title: 'Ahorra 80% del Tiempo en Reportes',
+      title: 'Ahorra 90% del Tiempo en Reportes',
       description:
         'Elimina horas de consolidar información. Reportes automáticos en segundos, no en días.',
       color: 'from-yellow-500 to-orange-500',
@@ -113,9 +113,9 @@ export default function Benefits() {
           />
         </svg>
       ),
-      title: 'Protege tu Reputación',
+      title: 'Monitoreo con Visión 360°',
       description:
-        'Identifica y resuelve problemas antes de que escalen. Tu infraestructura refleja tu empresa.',
+        'Nada pasa desapercibido. Detecta anomalías en cualquier sede y actúa antes de que generen consecuencias.',
       color: 'from-red-500 to-pink-500',
     },
     {
@@ -214,9 +214,9 @@ export default function Benefits() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-4xl lg:text-5xl font-bold mb-2"
               >
-                80%
+                100%
               </motion.div>
-              <p className="text-blue-100">Reducción en tiempo de reportes</p>
+              <p className="text-blue-100">Trazabilidad digital certificada</p>
             </div>
 
             <div>
@@ -226,9 +226,9 @@ export default function Benefits() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-4xl lg:text-5xl font-bold mb-2"
               >
-                100%
+                24/7
               </motion.div>
-              <p className="text-blue-100">Trazabilidad de operaciones</p>
+              <p className="text-blue-100">Acceso desde cualquier lugar</p>
             </div>
 
             <div>
@@ -238,9 +238,9 @@ export default function Benefits() {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="text-4xl lg:text-5xl font-bold mb-2"
               >
-                24/7
+                Cero
               </motion.div>
-              <p className="text-blue-100">Visibilidad en tiempo real</p>
+              <p className="text-blue-100">Sorpresas operacionales</p>
             </div>
           </div>
         </motion.div>

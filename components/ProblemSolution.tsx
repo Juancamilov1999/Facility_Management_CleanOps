@@ -47,9 +47,9 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            ¿Pierdes el control sobre tus{' '}
-            <span className="text-red-600">contratistas</span> sin trazabilidad
-            ni visibilidad de lo que pasa en tu infraestructura?
+            ¿Gestionas múltiples{' '}
+            <span className="text-red-600">contratistas</span> sin visibilidad
+            ni control real?
           </motion.h2>
 
           <motion.p
@@ -170,8 +170,8 @@ export default function ProblemSolution() {
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mb-6"
           >
-            Una <span className="text-primary">plataforma unificada</span> que te
-            da control total sobre todos tus contratistas
+            Gestiona todos tus contratistas desde una sola{' '}
+            <span className="text-primary">plataforma unificada</span>
           </motion.h2>
 
           <motion.p

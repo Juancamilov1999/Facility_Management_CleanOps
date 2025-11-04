@@ -459,7 +459,17 @@ export default function DemoForm() {
                 {/* Privacy Note */}
                 <p className="text-xs text-dark-medium text-center">
                   Al enviar este formulario, aceptas que CleanOps procese tus
-                  datos para contactarte. Respetamos tu privacidad.
+                  datos para contactarte. Respetamos tu privacidad y protegemos
+                  tus datos según nuestra{' '}
+                  <a
+                    href="https://cleanops.notion.site/Pol-tica-de-Tratamiento-de-Datos-10cc020853858034a9c6d719753afd90"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary-light underline transition-colors"
+                  >
+                    política de privacidad
+                  </a>
+                  .
                 </p>
               </form>
             )}

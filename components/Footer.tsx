@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 lg:col-span-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -26,30 +26,49 @@ export default function Footer() {
                 className="h-10 w-auto mb-4"
               />
               <p className="text-dark-light max-w-md">
-                La plataforma integral para gestión de Facility Management.
-                Centraliza tus operaciones, mejora tu trazabilidad y toma
-                decisiones basadas en datos.
+                Control total de tu Facility Management desde una sola
+                plataforma.
               </p>
             </motion.div>
           </div>
 
-          {/* Quick Links */}
+          {/* Products */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-semibold text-lg mb-4">Enlaces Rápidos</h3>
+            <h3 className="font-semibold text-lg mb-4">Productos</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#features"
+                  href="/"
                   className="text-dark-light hover:text-primary-light transition-colors"
                 >
-                  Características
+                  Para Building Owners
                 </a>
               </li>
+              <li>
+                <a
+                  href="/contratistas"
+                  className="text-dark-light hover:text-primary-light transition-colors"
+                >
+                  Para Contratistas
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Resources */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <h3 className="font-semibold text-lg mb-4">Recursos</h3>
+            <ul className="space-y-2">
               <li>
                 <a
                   href="#demo"
@@ -145,10 +164,10 @@ export default function Footer() {
             <div className="mt-6">
               <p className="text-dark-light text-sm mb-1">Contacto:</p>
               <a
-                href="mailto:info@cleanops.co"
+                href="mailto:team@cleanops.co"
                 className="text-primary-light hover:text-primary transition-colors"
               >
-                info@cleanops.co
+                team@cleanops.co
               </a>
             </div>
           </motion.div>
@@ -169,16 +188,20 @@ export default function Footer() {
 
             <div className="flex gap-6 text-sm">
               <a
-                href="#"
+                href="https://cleanops.notion.site/Pol-tica-de-Tratamiento-de-Datos-10cc020853858034a9c6d719753afd90"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-dark-light hover:text-primary-light transition-colors"
               >
-                Política de Privacidad
+                Política de Tratamiento de Datos
               </a>
               <a
-                href="#"
+                href="https://cleanops.notion.site/T-rminos-y-Condiciones-CleanOps-10cc0208538580eeb41fc0933716f059"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-dark-light hover:text-primary-light transition-colors"
               >
-                Términos de Servicio
+                Términos y Condiciones
               </a>
             </div>
           </div>

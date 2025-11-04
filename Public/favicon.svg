@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- C azul claro -->
+  <path d="M 75 50 A 25 25 0 1 0 25 50 A 25 25 0 0 0 50 75"
+        fill="none"
+        stroke="#86C5E8"
+        stroke-width="15"
+        stroke-linecap="round"/>
+  <!-- C azul oscuro (parte inferior) -->
+  <path d="M 50 75 A 25 25 0 0 1 35 68"
+        fill="none"
+        stroke="#0A5A8A"
+        stroke-width="15"
+        stroke-linecap="round"/>
+  <!-- Círculo gris -->
+  <circle cx="78" cy="72" r="8" fill="#B8B8B8"/>
+</svg>

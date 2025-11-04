@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description: 'La plataforma integral para Building Owners y Contratistas. Trazabilidad completa, gestión en tiempo real.',
   keywords: 'facility management, gestión de edificios, contratistas, building owners, trazabilidad, operaciones',
   authors: [{ name: 'CleanOps' }],
+  icons: {
+    icon: '/Logos/Recurso 2.png',
+    shortcut: '/Logos/Recurso 2.png',
+    apple: '/Logos/Recurso 2.png',
+  },
   openGraph: {
     title: 'CleanOps - Plataforma de Facility Management',
     description: 'La plataforma integral para Building Owners y Contratistas.',
